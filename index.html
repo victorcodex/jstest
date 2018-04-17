@@ -1,0 +1,50 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="css/app.css" />
+	<link rel="stylesheet" href="css/pageslider.css" />
+	<link rel="stylesheet" href="fa/css/fontawesome-all.min.css" />
+	<link href="notify/css/messenger.css" rel="stylesheet" type="text/css" />
+	<link href="notify/css/messenger-theme-future.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="mainview">
+		<div class="page center" id="login" >
+			<h3 style="text-align: center">LOGIN</h3>
+			<input type="text" placeholder="Username" id="username" />
+			<input type="password" placeholder="Password" id="password" />
+			<button type="button" onclick="app.login()">Login</button>
+		</div>
+		
+		<div class="page right" id="app" >
+			<h3>List Tables</h3>
+			<button onclick="app.loadScreen('addtable')">Add Table</button>
+			<div id="tables"></div>
+		</div>
+		
+		<div class="page right" id="addtable" >
+			<h3>Add Table</h3>
+			<input type="text" placeholder="Name" id="table_name" />
+			<input type="text" placeholder="particpiants" id="table_participants" />
+			<button onclick="app.doAddTable()">Add Table</button>
+		</div>
+		
+		<div class="page right" id="edittable" >
+			<h3>Edit Table</h3>
+			<input type="text" placeholder="Name" id="edit_table_name" />
+			<input type="text" placeholder="particpiants" id="edit_table_participants" />
+			<input type="hidden" id="table_id" />
+			
+			<button onclick="app.doSaveTable()">Save Table</button>
+		</div>
+	</div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="notify/js/messenger.min.js" type="text/javascript"></script>
+	<script src="notify/js/messenger-theme-future.js" type="text/javascript"></script>
+	<script src="js/ws.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

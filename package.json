@@ -1,0 +1,15 @@
+{
+  "name": "evolution-gaming-test",
+  "version": "1.0.0",
+  "description": "Test Project for Evolution gaming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://js-assignment.evolutiongaming.com/git/victorcodex/dakeyehu.git"
+  },
+  "author": "victorcodex",
+  "license": "ISC"
+}

@@ -1,0 +1,43 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+#mainview {
+    position: absolute;
+	padding: 0px;
+	margin: 0px;
+    width: 900px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	-webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+ 
+.page.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+ 
+.page.center {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+ 
+.page.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+ 
+.page.transition {
+    transition: transform .50s;
+	-webkit-transition: transform .50s;
+}
